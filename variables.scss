@@ -1,0 +1,85 @@
+// FONT 
+
+
+$font-family-sans-serif:
+'Montserrat', sans-serif;
+$de-font-family-decor: 'Great Vibes', cursive;
+  
+
+
+
+
+// Toggle global options
+
+
+
+$enable-gradients: true;
+$enable-shadows: true;
+
+$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+
+// Customize some defaults
+$body-color: #333;
+$body-bg: #fff;
+$border-radius: .4rem;
+$success: #7952b3;
+
+
+//SPACING//
+$spacer: 1rem;
+
+$spacers: (  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  max: $spacer * 5
+);
+
+
+
+
+
+
+.d-flex-3{
+  font-style:italic;
+  font-size: 3vh;
+  margin-top: 3vh;
+  
+
+}
+
+
+.d-flex-1 {
+  
+  animation: moving 5s;
+}
+@keyframes moving {
+from {transform: translatex(40px);}
+to {transform: translatey(200px);}
+}
+
+
+
+.d-flex-2  {
+  
+animation: moving 5s;
+}
+@keyframes moving {
+from {transform: translatex(80px);}
+to {transform: translatey(0px);}
+}
+
+
+
+
+.d-flex-3  {
+  
+animation: moving 5s;
+}
+@keyframes moving {
+from {transform: translatex(80px);}
+to {transform: translatey(0px);}
+}
+  

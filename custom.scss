@@ -1,0 +1,859 @@
+
+    
+  
+/*colors*/
+
+$smoky-black: #191310ff;
+$platinum: #e5e2deff;
+$chestnut: #934c34ff;
+$persian-orange: #c68b4eff;
+$spanish-gray: #909291ff;
+
+$border-radius: 0rem;
+$border-radius-ms: 0rem;
+$border-radius-lg: 0rem;
+
+
+
+
+
+$primary:$smoky-black;
+$secondary:$persian-orange;
+
+
+
+.btn.btn-primary {
+  
+  background-color: $smoky-black;
+  border-color: $smoky-black;
+  border-radius: $border-radius;
+
+
+ 
+  
+}
+
+
+//navbar set//
+
+
+
+
+
+.btn.btn-secondary {
+  color: $persian-orange;
+ background-color: $platinum;
+ border-color: $persian-orange;
+border-radius: $border-radius;
+
+ 
+  
+}
+.btn.btn-secondary:hover{
+  background-color: $persian-orange;
+}
+.btn.btn-secondary:hover{
+  color: $platinum;
+}
+
+
+
+
+
+
+.btn{
+  position: relative;
+  text-transform :uppercase;
+  margin: 5px;
+  padding: .8rem 4rem;
+  margin-top: 3rem;
+
+
+  &::before { content:"";
+    display:block;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom:-5px;
+    left:-5px;
+   
+
+    //background-color: red;
+    border-width: 1px;
+    border-style: solid;
+    border-color: inherit;
+    //z-index: -1;
+
+   
+    
+    
+
+  }
+}
+
+
+
+
+
+
+//HW-1 using nav link clkass - add  after--> underline
+
+
+
+
+.nav-item:after{
+ content: ""; 
+ display: block; 
+ margin: 0 auto; 
+ width: 50%; 
+
+ border-bottom: 1px solid $persian-orange;
+ margin-top: -8px;
+  
+}
+
+.nav-item:after {
+  content: ""; 
+  display: block; 
+ width: 0.3px; 
+  border-bottom: 1px solid $persian-orange; 
+  transition: .10s;
+    
+}
+
+.nav-item:hover:after {
+  width: 45%; 
+}
+
+
+
+
+
+
+   .navbar-light .navbar-nav .nav-link:hover {
+    color: $persian-orange;
+}
+.navbar-top{
+  margin-top: -4vh;
+}
+
+
+
+
+   
+  
+
+
+
+
+
+
+.navbar{
+ 
+  position: absolute;
+   z-index: 2000;
+  width: 100%;
+  text-transform :uppercase
+  
+ 
+ }
+
+.nav-item{
+  padding-right:6vh;
+  
+}
+
+
+
+
+
+
+.h-100vh{
+  height: 100vh;
+  
+}
+.fit-cover{
+  object-fit: cover;
+
+}
+
+
+
+
+
+//hw-2 CAROUSEL ELABORATE ANATHER 1,2 EFFECTS
+
+.slow-zoom-out {
+  
+animation:slow-zoom-out 8s;
+animation-iteration-count: infinite;
+  @keyframes slow-zoom-out {
+    from{
+      transform:scale(1.2)
+    }
+    to{
+      transform:scale(1.0)
+      
+    }
+   
+
+  
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#carouselExampleCaptions{
+
+
+  .carousel-inner,
+  .carousel-item
+  
+         {
+    height: 100%;
+
+
+    
+  min-height: 100%;
+  min-width: 1024px;
+
+  
+  width: 100%;
+  height: auto;
+
+  
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+
+    
+    
+
+  }
+ 
+  
+img {
+  height: 100%;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+
+  
+  min-width: 100%;
+  min-height: 100%;
+}
+
+}
+
+
+  
+  
+
+
+
+
+  
+
+
+
+  //HW-3 carousel:flex + center, font-size,align, effect
+  .carousel-caption{
+    margin: auto;
+    top: 1.25rem;
+    left: auto;
+    
+
+
+  }
+  .d-flex-1{
+    
+    font-family: "Sofia", sans-serif;
+    font-size: 7vh;
+    margin-top: 14vh;
+    padding-bottom: 2vh;
+    color: rgb(193, 157, 86);
+    
+    
+    
+
+  }
+  .d-flex-2{
+    
+    font-family: Georgia, serif;
+    font-size: 14vh;
+    margin-top: -6vh;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    color: black;
+    
+    
+   
+    
+
+
+  }
+  .d-flex-3{
+    font-style: oblique;
+    font-size: 3vh;
+    margin-top: 3vh;
+    color: black;
+    
+
+  }
+
+
+
+
+
+
+
+
+
+.d-flex-1{
+
+  
+  animation: appear 3s;
+}
+@keyframes appear {
+  from {transform: translateX(-60px);}
+  to {transform: translatey(0px);}
+}
+
+
+    
+
+
+
+
+.d-flex-2 {
+    
+ 
+  animation: moving 3s ;
+}
+@keyframes moving {
+  from {transform: translatex(70px);}
+  to {transform: translateY(0px);}
+}
+
+
+
+
+
+
+/*---------------------------------------stile parallax---------------------------------------------------------------------------------*/
+
+
+
+
+        body{
+            margin: 0;
+        }
+        h1{
+            margin: 0;
+        }
+
+        section{
+            height:100vh;
+            position: relative;
+            
+        }
+
+
+
+
+
+
+
+        .seconda {
+            height: 45vh;
+            
+
+        }
+
+
+
+/*section-1*/
+
+
+
+
+       
+
+
+
+.prima{
+  background-image:  url(https://dolcino.qodeinteractive.com/wp-content/uploads/2018/11/h1-parallax-1-1.jpg);
+
+ 
+}
+.prima .d-flex-1, .d-flex-2, .d-flex-3  {
+  text-align: center;
+}
+.prima .d-flex-2{
+  font-size: 10vh;
+ 
+}
+
+
+
+
+
+
+/*section-2*/
+
+
+
+.found { 
+background-image: url(https://dolcino.qodeinteractive.com/wp-content/uploads/2018/11/h1-parallax-2-1.jpg);
+
+
+
+
+  top:-95%;
+  height:180%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+
+
+
+ 
+
+
+
+}
+.seconda .d-flex-1{
+text-align: center;
+
+
+
+
+
+
+
+}
+
+
+
+
+/*section -3*/
+
+
+
+.terta{
+  background-color: #fff;
+  text-align: center;
+  margin-top: 25vh;
+  height: 200vh;
+
+
+
+  
+
+  
+}
+
+.terta .d-flex-2{
+  font-size: 10vh;
+
+}
+
+.terta .d-flex-1 {
+ padding-top: 8vh;
+}
+
+
+
+
+
+  
+  
+
+
+
+
+
+.terta img{
+  width: 140px;
+  height: 160px;
+  padding-top: 50px;
+  margin-top: 130px;
+  border-radius: 50px;
+
+}
+
+@media (max-width: 800px) {
+  .terta {
+height: 430vh;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .terta {
+height: 430vh;
+  }
+}
+
+@media (max-width: 560px) {
+  .terta {
+height: 480vh;
+  }
+}
+
+@media (max-width: 450px) {
+  .terta {
+height: 480vh;
+  }
+}
+@media (max-width: 340px) {
+  .terta {
+height: 550vh;
+  }
+}
+
+
+
+
+
+
+/*-------------truffle effect----------------------------------------------------------------------------------------------*/
+
+
+
+
+.foto-10{
+
+border-radius: 100px;
+}
+
+
+
+.foto-10 {
+
+-webkit-transform: scale(1.5);
+transform: scale(1.3);
+-webkit-transition: .3s ease-in-out;
+transition: .3s ease-in-out;
+}
+.foto-10:hover {
+-webkit-transform: scale(1);
+transform: scale(1);
+}
+
+.foto-11{
+
+border-radius: 100px;
+}
+
+
+
+.foto-11 {
+
+-webkit-transform: scale(1.5);
+transform: scale(1.3);
+-webkit-transition: .3s ease-in-out;
+transition: .3s ease-in-out;
+}
+.foto-11:hover {
+-webkit-transform: scale(1);
+transform: scale(1);
+}
+
+
+
+
+
+
+
+.foto-12{
+
+border-radius: 100px;
+}
+
+
+
+.foto-12 {
+
+-webkit-transform: scale(1.5);
+transform: scale(1.3);
+-webkit-transition: .3s ease-in-out;
+transition: .3s ease-in-out;
+}
+.foto-12:hover {
+-webkit-transform: scale(1);
+transform: scale(1);
+}
+
+
+
+
+
+
+.foto-13{
+
+border-radius: 100px;
+}
+
+
+
+.foto-13 {
+
+-webkit-transform: scale(1.5);
+transform: scale(1.3);
+-webkit-transition: .3s ease-in-out;
+transition: .3s ease-in-out;
+}
+.foto-13:hover {
+-webkit-transform: scale(1);
+transform: scale(1);
+}
+
+
+
+
+
+.foto-14{
+
+border-radius: 100px;
+}
+
+
+
+.foto-14 {
+
+-webkit-transform: scale(1.5);
+transform: scale(1.3);
+-webkit-transition: .3s ease-in-out;
+transition: .3s ease-in-out;
+}
+.foto-14:hover {
+-webkit-transform: scale(1);
+transform: scale(1);
+}
+
+
+
+
+.foto-15{
+
+border-radius: 100px;
+}
+
+
+
+.foto-15 {
+
+-webkit-transform: scale(1.5);
+transform: scale(1.3);
+-webkit-transition: .3s ease-in-out;
+transition: .3s ease-in-out;
+}
+.foto-15:hover {
+-webkit-transform: scale(1);
+transform: scale(1);
+}
+
+
+
+
+
+
+
+
+.container .foto-15{
+margin-top: 30vh;
+}
+
+.container .foto-14{
+margin-top: 30vh;
+}
+
+.container .foto-13{
+margin-top: 30vh;
+}
+
+
+
+.container .type{
+padding-top: 10vh;
+text-decoration: none;
+
+}
+
+.container .type h1{
+font-size: 3.3vh;
+
+}
+.container .type h2{
+font-size: 2.8vh;
+font-family: "Sofia", sans-serif;
+
+
+}
+.container .type a{
+text-decoration: none;
+color:black;
+}
+
+.container .type a:hover{
+  color: #c68b4eff;
+}
+
+
+
+
+
+/*truffle efect-2-------------------------------*/
+
+
+
+.foto-10 {
+  opacity: 1;
+  
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+
+  margin-top: -8vh;
+  margin-left: 42%;
+  
+
+ 
+}
+
+.content:hover .foto-10 {
+  opacity: 0.3;
+}
+
+.content:hover .middle {
+  opacity: 1;
+}
+
+.text {
+
+  color:black;
+  font-size: 16px;
+  width: 6vh;
+ font-family: sans-serif;
+ 
+
+}
+
+.text:hover{
+  color: #934c34ff;
+
+}
+
+.foto-11 {
+  opacity: 1;
+  
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.content:hover .foto-11 {
+  opacity: 0.3;
+}
+.foto-12 {
+  opacity: 1;
+  
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.content:hover .foto-12 {
+  opacity: 0.3;
+}
+
+
+.foto-13 {
+  opacity: 1;
+  
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.content:hover .foto-13 {
+  opacity: 0.3;
+}
+
+.foto-14 {
+  opacity: 1;
+  
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.content:hover .foto-14 {
+  opacity: 0.3;
+}
+
+.foto-15 {
+  opacity: 1;
+  
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.content:hover .foto-15 {
+  opacity: 0.3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

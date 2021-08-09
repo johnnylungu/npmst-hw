@@ -1,0 +1,65 @@
+.d-flex-3 {
+  font-style: italic;
+  font-size: 3vh;
+  margin-top: 3vh;
+}
+
+.d-flex-1 {
+  -webkit-animation: moving 5s;
+          animation: moving 5s;
+}
+
+@-webkit-keyframes moving {
+  from {
+    -webkit-transform: translatex(40px);
+            transform: translatex(40px);
+  }
+  to {
+    -webkit-transform: translatey(200px);
+            transform: translatey(200px);
+  }
+}
+
+@keyframes moving {
+  from {
+    -webkit-transform: translatex(40px);
+            transform: translatex(40px);
+  }
+  to {
+    -webkit-transform: translatey(200px);
+            transform: translatey(200px);
+  }
+}
+
+.d-flex-2 {
+  -webkit-animation: moving 5s;
+          animation: moving 5s;
+}
+
+@keyframes moving {
+  from {
+    -webkit-transform: translatex(80px);
+            transform: translatex(80px);
+  }
+  to {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+.d-flex-3 {
+  -webkit-animation: moving 5s;
+          animation: moving 5s;
+}
+
+@keyframes moving {
+  from {
+    -webkit-transform: translatex(80px);
+            transform: translatex(80px);
+  }
+  to {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+/*# sourceMappingURL=variables.css.map */
